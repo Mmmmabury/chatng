@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+}
+
+.ant-menu-title-content {
+    width: 90%;
+}
+
+.ant-menu-item {
+    display: flex !important;
+}
+
+*,
+:after,
+:before {
+    border: 0 solid #d9d9e3;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}

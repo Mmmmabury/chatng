@@ -1,0 +1,47 @@
+{
+  "name": "chatng",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && tailwindcss build -i ./src/styles/globals.css -o ./public/dist/main.css",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "antd": "^5.3.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "eventsource-parser": "^0.1.0",
+    "highlight.js": "^11.7.0",
+    "js-sha256": "^0.9.0",
+    "level": "^8.0.0",
+    "lodash": "^4.17.21",
+    "markdown-it": "^13.0.1",
+    "markdown-it-highlightjs": "^4.0.1",
+    "markdown-it-katex": "^2.0.3",
+    "next": "13.2.4",
+    "next-connect": "^1.0.0-next.3",
+    "openai": "^3.2.1",
+    "pino": "^8.11.0",
+    "postcss": "^8.4.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.2.7",
+    "typescript": "4.9.5",
+    "undici": "^5.21.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/body-parser": "^1.19.2",
+    "@types/lodash": "^4.14.191",
+    "@types/markdown-it": "^12.2.3",
+    "pino-pretty": "^10.0.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.5"
+  }
+}
