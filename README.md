@@ -31,6 +31,9 @@ ChatGPT 是一个非常有效的工具，它能够极大地提高入门效率，
 
 随着项目的不断推进，我意识到自己需要大量补充 Node.js、Next.js 等网页前端知识，才能重新掌控整个项目。
 
+## 感谢
+[ddiu8081/chatgpt-demo](https://github.com/ddiu8081/chatgpt-demo) 项目给我的灵感。
+
 ## 版权和许可证
 
 本项目采用 MIT 许可证。详细信息请参考 [LICENSE](LICENSE) 文件。
