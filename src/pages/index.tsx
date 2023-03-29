@@ -62,10 +62,7 @@ export default function Home() {
             const timestamp = Date.now();
             const controller = new AbortController();
             setCurrentReaderController(controller);
-            var fetchUrl = "/api/hello";
-            if (process.env.NODE_ENV === "production") {
-                fetchUrl = "/api/v1/chat/completions";
-            }
+            const fetchUrl = "/api/v1/chat/completions";
             const response = await fetch(fetchUrl, {
                 // const response = await fetch("/api/v1/chat/completions", {
                 headers: {

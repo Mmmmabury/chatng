@@ -1,6 +1,7 @@
 import pinoLogger from "pino";
 
 const pLogger = pinoLogger({
+    level: "info",
     transport: {
         target: "pino-pretty",
     },
@@ -67,8 +68,15 @@ function logger() {
 
         if (process.env.NODE_ENV === "production") {
             // 在生产环境中运行
+            pLogger.level = LOGLEVEL.error;
+            if (typeof window !== "undefined") {
+                console.log(`[${level}]: ${logMsg} ${funcName}:${line}:${col}`);
+            } else {
+                pLogger[level](logMsg);
+            }
         } else {
             // 在开发环境中运行
+            pLogger.level = LOGLEVEL.debug;
             if (typeof window !== "undefined") {
                 console.log(`[${level}]: ${logMsg} ${funcName}:${line}:${col}`);
             } else {
